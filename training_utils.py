@@ -14,7 +14,6 @@ def train(model, trainloader, optimizer, criterion, device):
         image, labels = data
         image = image.to(device)
         labels = labels.to(device)
-        print(f"labels: {labels}")
         optimizer.zero_grad()
         # Forward pass.
         outputs = model(image)
